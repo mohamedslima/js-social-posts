@@ -68,6 +68,7 @@ const posts = [
     }
 ];
 
+// Milestone 2
 const postsContainer = document.getElementById("container");
 
 posts.forEach(post => {
@@ -84,6 +85,7 @@ posts.forEach(post => {
  * @param {object} postObject -> oggetto con i dati da inserire
  * @returns {any} elemento HTML
  */
+
 function createPostElement(postObject) {
     const {id, content, author, media, likes, created} = postObject;
     const postElement = `
@@ -118,4 +120,6 @@ function createPostElement(postObject) {
             </div>            
         </div>
         `;
+
+        return postElement;
 }
