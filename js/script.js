@@ -103,7 +103,7 @@ likeButtons.forEach((button, index) => {
         event.preventDefault();
         // -cambiare colore button
         this.classList.add("like-button--liked");
-        // -incrementare counter like
+        // prelevo post cliccato tramite indice
         const clickedPost = posts[index];
         const clickedPostId = clickedPost.id;
         const likeCounter = document.getElementById(`like-counter-${clickedPostId}`);
