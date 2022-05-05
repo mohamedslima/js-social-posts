@@ -36,10 +36,10 @@ const posts = [
     {
         "id": 2,
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
-        "media": "https://unsplash.it/600/300?image=171",
+        "media": "https://picsum.photos/310/150",
         "author": {
             "name": "Fabio Rossi",
-            "image": "https://unsplash.it/300/300?image=15"
+            "image": "https://picsum.photos/50"
         },
         "likes": 40,
         "created": "2020-11-21"
@@ -47,10 +47,10 @@ const posts = [
     {
         "id": 3,
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
-        "media": "https://unsplash.it/600/300?image=171",
+        "media": "https://picsum.photos/320/150",
         "author": {
             "name": "Lorenzo Luchini",
-            "image": "https://unsplash.it/300/300?image=15"
+            "image": "https://picsum.photos/60"
         },
         "likes": 85,
         "created": "2016-06-15"
@@ -58,10 +58,10 @@ const posts = [
     {
         "id": 4,
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
-        "media": "https://unsplash.it/600/300?image=171",
+        "media": "https://picsum.photos/300/160",
         "author": {
             "name": "Anna Grand",
-            "image": "https://unsplash.it/300/300?image=15"
+            "image": "https://picsum.photos/55"
         },
         "likes": 12,
         "created": "2022-01-25"
