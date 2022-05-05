@@ -65,10 +65,22 @@ const posts = [
         },
         "likes": 12,
         "created": "2022-01-25"
+    },
+    {
+        "id": 5,
+        "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
+        "media": "https://picsum.photos/300/160",
+        "author": {
+            "name": "Mohamed Slima",
+            "image": "https://picsum.photos/55"
+        },
+        "likes": 152,
+        "created": "2022-02-22"
     }
 ];
 
 // Milestone 2
+
 const postsContainer = document.getElementById("container");
 
 posts.forEach(post => {
@@ -78,6 +90,23 @@ posts.forEach(post => {
 
     postsContainer.innerHTML += createdPost;
 });
+
+// milestone 3
+// al clik tasto mi piace
+
+
+// -salvare in array separato
+const likeButtons = document.querySelectorAll(".like-button");
+
+likeButtons.forEach(button => {
+    button.addEventListener("click", function(event) {
+        event.preventDefault();
+        // -cambiare colore button
+        this.classList.add("like-button--liked");
+        // -incrementare counter like
+    });
+});
+ 
 
 // FUNCTION
 /**
