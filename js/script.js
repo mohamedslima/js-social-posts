@@ -98,12 +98,18 @@ posts.forEach(post => {
 // -salvare in array separato
 const likeButtons = document.querySelectorAll(".like-button");
 
-likeButtons.forEach(button => {
+likeButtons.forEach((button, index) => {
     button.addEventListener("click", function(event) {
         event.preventDefault();
         // -cambiare colore button
         this.classList.add("like-button--liked");
         // -incrementare counter like
+        const clickedPost = posts[index];
+        const clickedPostId = clickedPost.id;
+        const likeCounter = document.getElementById(`like-counter-${clickedPostId}`);
+        let likesNumber = parseInt(likeCounter.textContent);
+        likesNumber = likesNumber + 1;
+        likeCounter.textContent = likesNumber;
     });
 });
  
